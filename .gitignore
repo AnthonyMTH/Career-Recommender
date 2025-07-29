@@ -1,0 +1,88 @@
+# Archivos de datos y bases de datos
+*.xlsx
+*.xls
+*.csv
+*.db
+*.sqlite
+*.sqlite3
+
+# Base de datos vectorial
+.chromadb/
+*.chromadb
+
+# Variables de entorno
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Build outputs
+build/
+dist/
+.next/
+out/
+
+# IDEs y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs
+*.log
+
+# Archivos temporales
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# Archivos de configuración específicos del entorno
+config.local.py
+settings.local.py
+
+# Archivos de respaldo
+*.bak
+*.backup
