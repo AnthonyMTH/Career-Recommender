@@ -84,3 +84,5 @@ settings.local.py
 # Archivos de respaldo
 *.bak
 *.backup
+
+*.png

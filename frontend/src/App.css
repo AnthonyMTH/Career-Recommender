@@ -1,38 +1,170 @@
-.App {
+/* Estilos Generales y Tipografía */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f9;
+  color: #333;
+}
+
+/* Contenedor Principal */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  color: #7f8c8d;
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Formulario */
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+}
+
+textarea {
+  width: 95%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #dfe6e9;
+  font-size: 16px;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
   color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+/* Contenedor de Sliders */
+.sliders-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.slider-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-item label {
+  margin-bottom: 10px;
+  color: #555;
+  font-weight: 500;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #dfe6e9;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Estilo del "pulgar" o manejador del slider para Chrome/Safari */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #3498db;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #2980b9;
+}
+
+/* Estilo del "pulgar" o manejador del slider para Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #3498db;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: #2980b9;
+}
+
+/* Contenedor de Resultados */
+.resultados-container {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.resultados-container h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+}
+
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-left: 5px solid #3498db;
+}
+
+li strong {
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 5px;
 }

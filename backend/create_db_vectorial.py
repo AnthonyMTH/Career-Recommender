@@ -39,7 +39,7 @@ collection.add(
     ids=[str(i) for i in df.index]
 )
 
-print("✅ Base vectorial creada con éxito.")
-print("🔍 Ejemplo de embedding:", embeddings[0][:5])  # Solo 5 valores para resumir
-print("🧮 Dimensión del embedding:", len(embeddings[0]))
-print("🔍 Carreras insertadas:", collection.count())
+print("Base vectorial creada con éxito.")
+print("Ejemplo de embedding:", embeddings[0][:5])  # Solo 5 valores para resumir
+print("Dimensión del embedding:", len(embeddings[0]))
+print("Carreras insertadas:", collection.count())
